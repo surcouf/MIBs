@@ -20,11 +20,12 @@ IBM-AIX-MIB DEFINITIONS ::= BEGIN
 
 
 IMPORTS
-	MODULE-IDENTITY, OBJECT-TYPE,  Integer32, enterprises,
+	MODULE-IDENTITY, OBJECT-TYPE,  Integer32,
 	TimeTicks, NOTIFICATION-TYPE 			FROM SNMPv2-SMI
 	DisplayString, DateAndTime			FROM SNMPv2-TC
 	MODULE-COMPLIANCE, OBJECT-GROUP,
-	NOTIFICATION-GROUP                     		FROM SNMPv2-CONF;
+	NOTIFICATION-GROUP				FROM SNMPv2-CONF
+	ibm						FROM IBM-MIB;
 
 
 ibmAIX MODULE-IDENTITY
@@ -60,8 +61,6 @@ ibmAIX MODULE-IDENTITY
 		subsystem services (subsystem, subserver), login users,
 		system environment, events."
 	::= { ibmProd 191}
-
-ibm	OBJECT IDENTIFIER  	::= { enterprises 2 }
 
 ibmProd OBJECT IDENTIFIER	::= { ibm 6 }
 
