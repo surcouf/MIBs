@@ -42,6 +42,7 @@ hp386		OBJECT IDENTIFIER ::= { system 8 }
 hp9000s300	OBJECT IDENTIFIER ::= { hpux 2 }
 hp9000s800	OBJECT IDENTIFIER ::= { hpux 3 }
 hp9000s700	OBJECT IDENTIFIER ::= { hpux 5 }
+hpItanium	OBJECT IDENTIFIER ::= { hpux 6 }
 sparc		OBJECT IDENTIFIER ::= { hpsun 1 }
 
 -- the ComputerSystem Group
